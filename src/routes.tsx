@@ -1,16 +1,20 @@
 import { createBrowserRouter } from 'react-router-dom';
 import TicketVerify from './pages/TicketVerify';
+// Ensure this path matches your explorer: src/app/components/Dashboard.tsx
 import Dashboard from './app/components/Dashboard';
-// ... import your other components (Dashboard, Login, etc.)
 
 export const router = createBrowserRouter([
   {
+    // Added leading slash for the root path
     path: "/",
-    element: <Dashboard />, // Your existing main page
+    element: <Dashboard />,
   },
   {
-    path: "/verify/:id", // This matches the URL in your Android QR code
+    /** * FIXED: Added leading slash. 
+     * The ':id' catches the booking ID.
+     * The '*' handles any trailing slashes from the mobile browser.
+     */
+    path: "/verify/:id/*", 
     element: <TicketVerify />,
   },
-  // ... other existing routes
 ]);
