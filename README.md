@@ -1,7 +1,7 @@
 
-  # Admin Dashboard UI Design
+  # Admin Dashboard Link
 
-  This is a code bundle for Admin Dashboard UI Design. The original project is available at https://www.figma.com/design/P5ixuCBJYLoYQZ6byWHhEn/Admin-Dashboard-UI-Design.
+(https://travel-ra-admin.vercel.app/)
 
   ## Running the code
 
